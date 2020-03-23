@@ -1,0 +1,27 @@
+{
+  "name": "html-css-signup-form",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "app.js",
+  "engines":{
+    "node":"13.8.0"
+  },
+  "scripts": {
+    "start":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/siddayya96/html-css-signup-form.git"
+  },
+  "author": "Siddaiah M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/siddayya96/html-css-signup-form/issues"
+  },
+  "homepage": "https://gitlab.com/siddayya96/html-css-signup-form#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "heroku": "^7.39.1"
+  }
+}
