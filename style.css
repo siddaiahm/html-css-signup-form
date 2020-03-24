@@ -47,12 +47,13 @@ h1{
     flex-direction: column;
 }
 .lead, .form {
-    flex-basis: 30%;
+    flex-basis: 40%;
     margin-right: 10px;
 }
 .form-head{
     background-color: hsl(248, 32%, 49%);
     text-align: center;
+    padding: 10px;
 }
 .form-head,.form-content {
     border-radius: 10px;
@@ -66,24 +67,16 @@ h1{
 .input {
     display: flex;
     flex-direction: column;
-    margin: 20px 40px;
+    margin: 15px;
 }
-.input input,.btn {
-    padding: 18px 12px;
-    border-radius: 5px;
-}
-.input input {
-    border: 2px solid hsl(246, 25%, 77%);
-    color: hsl(249, 10%, 26%);
-}
-.input input:focus{
-    border: 2px solid hsl(249, 10%, 26%);
+.input-val input{
+    border: 0px;
 }
 .input p {
     align-self: flex-end;
     display:none;
 }
-.input input,.btn,.form-head p {
+.input-val input,.btn,.form-head p {
     font-size: 20px;
 }
 .btn {
@@ -94,6 +87,27 @@ h1{
     display: block;
     color: hsl(246, 25%, 77%);
     text-align: center;
+}
+.input-val {
+    display: flex;
+    border: 3px solid hsl(246, 25%, 77%);
+    color: hsl(249, 10%, 26%);
+    border-radius: 5px;
+}
+.input-val input,.btn {
+    padding: 18px 12px;
+}
+.input-val input:focus {
+    border: 3px solid hsl(249, 10%, 26%);
+}
+.input-val input {
+    flex: 2;
+}
+.input-val img {
+    padding: 17px;
+    justify-self: center;
+    align-self: center;
+    display:none;
 }
 
 

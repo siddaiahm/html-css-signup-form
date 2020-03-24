@@ -23,20 +23,32 @@
             </div>
             <div class="form-content">
                 <div class="input">
-                    <input type="text" name="firstName" id="fName" placeholder="First Name" />
+                    <div class="input-val" id="fdiv">
+                        <input type="text" name="firstName" id="fName" placeholder="First Name"/>
+                        <img id="ferror"src="images/icon-error.svg" alt="error" />
+                    </div>
                     <p id="fNameP">First Name cannot be empty</p>
                 </div>
                 <div class="input">
-                    <input type="text" name="lastName" id="lName" placeholder="Last Name" />
+                    <div class="input-val" id="ldiv">
+                        <input type="text" name="lastName" id="lName" placeholder="Last Name" />
+                        <img id="lerror"src="images/icon-error.svg" alt="error" />
+                    </div>
                     <p id="lNameP">Last Name cannot be empty</p>
                 </div>
                 <div class="input">
-                    <input type="email" name="email" id="emailId" placeholder="Email Address" />
-                    <p id="emailP">Looks like this is no an email</p>
+                    <div class="input-val" id="emaildiv">
+                        <input type="email" name="email" id="emailId" placeholder="Email Address" />
+                        <img id="emailerror"src="images/icon-error.svg" alt="error" />
+                    </div>
+                    <p id="emailP">Looks like this is not an email</p>
                 </div>
                 <div class="input">
-                    <input type="password" name="password" id="pwd" placeholder="Password" />
-                    <p id="pwdP">First Name cannot be empty</p>
+                    <div class="input-val" id="pwddiv">
+                        <input type="password" name="password" id="pwd" placeholder="Password" />
+                        <img id="pwderror"src="images/icon-error.svg" alt="error" />
+                    </div>
+                    <p id="pwdP">Password cannot be empty</p>
                 </div>
                 <div class="input btn-alt">
                     <button class="btn" onclick="validation();">CLAIM YOUR FREE TRIAL</button>
@@ -47,8 +59,19 @@
         </section>
     </section>
     <script>
-        function validation(){
-            document.getElementById("fNameP").style.display="block";
+        function validation() {
+            document.getElementById("fdiv").style.borderColor = "hsl(0, 100%, 74%)";
+            document.getElementById("fNameP").style.display = "block";
+            document.getElementById("ferror").style.display="block";
+            document.getElementById("ldiv").style.borderColor = "hsl(0, 100%, 74%)";
+            document.getElementById("lNameP").style.display = "block";
+            document.getElementById("lerror").style.display="block";
+            document.getElementById("emaildiv").style.borderColor = "hsl(0, 100%, 74%)";
+            document.getElementById("emailP").style.display = "block";
+            document.getElementById("emailerror").style.display="block";
+            document.getElementById("pwddiv").style.borderColor = "hsl(0, 100%, 74%)";
+            document.getElementById("pwdP").style.display = "block";
+            document.getElementById("pwderror").style.display="block";
         }
     </script>
 </body>
