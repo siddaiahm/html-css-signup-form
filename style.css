@@ -55,7 +55,7 @@ h1{
 }
 .form-head,.form-content {
     border-radius: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
     width: 80%;
 }
 .form-content {
@@ -65,13 +65,13 @@ h1{
 .input {
     display: flex;
     flex-direction: column;
-    margin: 20px 70px;
+    margin: 20px 40px;
 }
 .input input,.btn {
     padding: 18px 12px;
     border-radius: 5px;
 }
-.inpu input {
+.input input {
     border: 2px solid hsl(246, 25%, 77%);
     color: hsl(249, 10%, 26%);
 }
@@ -81,6 +81,9 @@ h1{
 .input p {
     align-self: flex-end;
     display:none;
+}
+.input input,.btn,.form-head p {
+    font-size: 20px;
 }
 .btn {
     background-color: hsl(154, 59%, 51%);
@@ -99,11 +102,15 @@ h1{
   ========================================
 */
 @media only screen and (max-width:500px) {
+    
     .container {
         display: flex;
         flex-direction: column;
         margin: 10px;
-        padding:20px;
+        padding:10px;
+    }
+    .input input,.btn,.form-head p {
+        font-size: 16px;
     }
     .lead {
         text-align: center;

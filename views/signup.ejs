@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signUp form</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 </head>
 
 <body>
@@ -38,13 +39,18 @@
                     <p id="pwdP">First Name cannot be empty</p>
                 </div>
                 <div class="input btn-alt">
-                    <button class="btn">CLAIM YOUR FREE TRIAL</button>
+                    <button class="btn" onclick="validation();">CLAIM YOUR FREE TRIAL</button>
                     <p>By clicking the button, you are agreeing to our <span style="color:hsl(0, 100%, 74%)">Terms and
                             Services</span></p>
                 </div>
             </div>
         </section>
     </section>
+    <script>
+        function validation(){
+            document.getElementById("fNameP").style.display="block";
+        }
+    </script>
 </body>
 
 </html>
