@@ -48,17 +48,17 @@ h1{
 }
 .lead, .form {
     flex-basis: 40%;
-    /* margin-right: 10px; */
 }
 .form-head{
     background-color: hsl(248, 32%, 49%);
     text-align: center;
-    padding: 10px;
+    padding: 3px 10px;
 }
 .form-head,.form-content {
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     width: 100%;
+    box-shadow: 0px 3px hsl(0, 25%, 51%);
 }
 .form-content {
     background: hsl(0, 0%, 98%);
@@ -74,7 +74,8 @@ h1{
 }
 .input p {
     align-self: flex-end;
-    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     display:none;
 }
 .input-val input,.btn,.form-head p {
@@ -83,11 +84,12 @@ h1{
 .btn {
     background-color: hsl(154, 59%, 51%);
     color: hsl(0, 0%, 98%);
+    border-radius: 5px;
 }
 .btn-alt p {
     display: block;
     color: hsl(246, 25%, 77%);
-    text-align: center;
+    align-self: center;
 }
 .input-val {
     display: flex;
@@ -96,7 +98,8 @@ h1{
     border-radius: 5px;
 }
 .input-val input,.btn {
-    padding: 18px 12px;
+    padding: 12px 12px;
+    outline: 0;
 }
 .input-val input:focus {
     border: 3px solid hsl(249, 10%, 26%);
@@ -108,7 +111,9 @@ h1{
     padding:10px;
     display:none;
 }
-
+.form-content {
+    padding: 15px;
+}
 
 /*
   ========================================
@@ -124,14 +129,24 @@ h1{
         padding:10px;
         height: auto;
     }
+    .form-content{
+        padding: 0px;
+    }
+    h1 {
+        font-size: 32px;
+    }
     .input-val input,.btn{
         font-size: 14px;
         padding: 8px 5px;
+        outline: 0;
     }
     .form-head p,.input p {
         font-size: 15px;
     }
-    .lead {
+    .lead p {
+        font-size: 21px;
+    }
+    .lead ,.btn-alt p{
         text-align: center;
     }
 }
