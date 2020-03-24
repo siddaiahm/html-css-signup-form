@@ -109,6 +109,7 @@ h1{
         flex-direction: column;
         margin: 10px;
         padding:10px;
+        height: auto;
     }
     .input input,.btn,.form-head p {
         font-size: 16px;
