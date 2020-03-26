@@ -10,7 +10,6 @@
     background-color: hsl(0, 100%, 74%);
     background-size: cover;
     margin: 150px 100px;
-    height: 1000px;
     padding: 200px 100px;
 }
 /*
@@ -21,6 +20,7 @@
 body {
     background: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 98%);
+    font-family: Arial, Helvetica, sans-serif;
     font: 600px 18px / 22px "Poppins";
     font-size: 16px;
   }
@@ -28,10 +28,7 @@ h1,h2 {
     color: hsl(0, 0%, 98%);
 }
 h1{
-    font-size: 60px;
-}
-.lead p {
-    font-size: 23px;
+    font-size: 46px;
 }
 /*
   ========================================
@@ -47,12 +44,13 @@ h1{
     flex-direction: column;
 }
 .lead, .form {
-    flex-basis: 40%;
+    flex-basis: 33%;
+    margin: 20px;
 }
 .form-head{
     background-color: hsl(248, 32%, 49%);
     text-align: center;
-    padding: 3px 10px;
+    padding: 0px 10px;
 }
 .form-head,.form-content {
     border-radius: 10px;
@@ -67,10 +65,11 @@ h1{
 .input {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 10px;
 }
 .input-val input{
     border: 0px;
+    background: hsl(0, 0%, 98%);
 }
 .input p {
     align-self: flex-end;
@@ -78,10 +77,11 @@ h1{
     margin-bottom: 0px;
     display:none;
 }
-.input-val input,.btn,.form-head p {
+.input-val input,.btn {
     font-size: 18px;
 }
 .btn {
+    border: 0px;
     background-color: hsl(154, 59%, 51%);
     color: hsl(0, 0%, 98%);
     border-radius: 5px;
@@ -90,22 +90,26 @@ h1{
     display: block;
     color: hsl(246, 25%, 77%);
     align-self: center;
+    text-align: center;
+    font-size: 13px;
 }
 .input-val {
+    background: hsl(0, 0%, 98%);
     display: flex;
-    border: 3px solid hsl(246, 25%, 77%);
+    border: 2px solid hsl(246, 25%, 77%);
     color: hsl(249, 10%, 26%);
     border-radius: 5px;
 }
 .input-val input,.btn {
-    padding: 12px 12px;
+    padding: 12px;
     outline: 0;
 }
-.input-val input:focus {
-    border: 3px solid hsl(249, 10%, 26%);
-}
+
 .input-val input {
     flex: 2;
+}
+.input-val input:focus + .input-val{
+    border: 3px solid hsl(249, 10%, 26%);
 }
 .input-val img {
     padding:10px;
@@ -120,20 +124,19 @@ h1{
   mobile
   ========================================
 */
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:700px) {
     
     .container {
         display: flex;
         flex-direction: column;
         margin: 10px;
-        padding:10px;
-        height: auto;
+        padding:0px;
     }
     .form-content{
-        padding: 0px;
+        padding: 10px;
     }
     h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
     .input-val input,.btn{
         font-size: 14px;
@@ -143,10 +146,39 @@ h1{
     .form-head p,.input p {
         font-size: 15px;
     }
-    .lead p {
-        font-size: 21px;
+    .btn-alt p {
+        font-size: 10px;
     }
     .lead ,.btn-alt p{
         text-align: center;
     }
+}
+@media only screen and (min-width:700px) and (max-width:1100px) {
+    
+    .container {
+        /* display: flex;
+        flex-direction: column; */
+        margin: 50px;
+        padding:0px;
+    }
+    .form-content{
+        padding: 10px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .input-val input,.btn{
+        font-size: 14px;
+        padding: 8px 5px;
+        outline: 0;
+    }
+    .form-head p,.input p ,.lead p{
+        font-size: 13px;
+    }
+    .btn-alt p {
+        font-size: 10px;
+    }
+    /* .lead ,.btn-alt p{
+        text-align: center;
+    } */
 }
