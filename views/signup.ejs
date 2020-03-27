@@ -22,6 +22,7 @@
                 <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
             </div>
             <div class="form-content">
+                <form action="success.html" target="_blank" method="get" onsubmit="return validation();">
                 <div class="input">
                     <div class="input-val" id="fdiv">
                         <input type="text" name="firstName" id="fName" placeholder="First Name"/>
@@ -51,34 +52,15 @@
                     <p id="pwdP">Password cannot be empty</p>
                 </div>
                 <div class="input btn-alt">
-                    <button class="btn" onclick="validation();">CLAIM YOUR FREE TRIAL</button>
+                    <button class="btn" type="submit">CLAIM YOUR FREE TRIAL</button>
                     <p>By clicking the button, you are agreeing to our <span style="color:hsl(0, 100%, 74%)">Terms and
                             Services</span></p>
                 </div>
+            </form>
             </div>
         </section>
     </section>
-    <script>
-        function validation() {
-            document.getElementById("fdiv").style.borderColor = "hsl(0, 100%, 74%)";
-            document.getElementById("fNameP").style.display = "block";
-            document.getElementById("ferror").style.display="block";
-            document.getElementById("fName").placeholder = "";
-            document.getElementById("ldiv").style.borderColor = "hsl(0, 100%, 74%)";
-            document.getElementById("lNameP").style.display = "block";
-            document.getElementById("lerror").style.display="block";
-            document.getElementById("lName").placeholder = "";
-            document.getElementById("emaildiv").style.borderColor = "hsl(0, 100%, 74%)";
-            document.getElementById("emailP").style.display = "block";
-            document.getElementById("emailerror").style.display="block";
-            document.getElementById("emailId").placeholder = "email@example/com";
-            document.getElementById("emailId").placeholder.style= "color: hsl(0, 100%, 74%);";
-            document.getElementById("pwddiv").style.borderColor = "hsl(0, 100%, 74%)";
-            document.getElementById("pwdP").style.display = "block";
-            document.getElementById("pwderror").style.display="block";
-            document.getElementById("pwd").placeholder = "";
-        }
-    </script>
+    <script src="validate.js"></script>
 </body>
 
 </html>
